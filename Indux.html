@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Luxury Elite | Premium Cars & Lifestyle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="project(1).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Enhanced Navbar -->
+<!-- ===== ORIGINAL NAVBAR FROM YOUR FILE ===== -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-crown"></i> Luxury Elite
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search...">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.htm"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        <li><a href="#"><i class="fas fa-user-circle"></i> My Account</a></li>
+        <li><a href="#"><i class="fas fa-shopping-bag"></i> <span class="badge">3</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Car Slider -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rolls Royce Phantom">
+      <div class="carousel-caption">
+        <h3>Rolls-Royce Phantom</h3>
+        <p>The ultimate luxury statement with handcrafted perfection and whisper-quiet cabin</p>
+        <a href="#" class="btn btn-primary">Explore Now</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lamborghini Aventador">
+      <div class="carousel-caption">
+        <h3>Lamborghini Aventador SVJ</h3>
+        <p>Exhilarating performance meets striking Italian design</p>
+        <a href="#" class="btn btn-primary">Discover More</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mercedes Maybach">
+      <div class="carousel-caption">
+        <h3>Mercedes-Maybach S-Class</h3>
+        <p>Unparalleled comfort with cutting-edge technology</p>
+        <a href="#" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1689255680603-cccb6ab43e1b?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="carousel-caption">
+        <h3>Ferrari SF90 Stradale</h3>
+        <p>Hybrid technology meets Ferrari's racing heritage</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Main Content -->
+<div class="container text-center" style="margin-top: 20px;">    
+  <div class="row">
+    <!-- <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#" style="text-decoration: none;">My Profile</a></p>
+        <video src="https://videocdn.cdnpk.net/videos/6734101e-8023-511d-8457-df1cd275ae14/horizontal/previews/watermarked/large.mp4" class="img-circle" height="65" width="65" autoplay loop muted></video><br>
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="well">
+        <p><a href="#" style="text-decoration: none;">Interests</a></p>
+        <p>
+          <span class="label label-default">News</span>
+          <span class="label label-primary">Luxury</span>
+          <span class="label label-success">Cars</span>
+          <span class="label label-info">Travel</span>
+          <span class="label label-warning">Technology</span>
+          <span class="label label-danger">Exclusive</span>
+        </p>
+      </div>
+      <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Exclusive Offer!</strong></p>
+        New 2025 models now available for pre-order.
+      </div>
+      <p><a href="#" class="btn btn-info btn-block">Search Luxury Items</a></p>
+      <p><a href="#" class="btn btn-warning btn-block">VIP Membership</a></p>
+      <div class="thumbnail">
+        <p>Latest Video</p>
+        <video width="100%" controls poster="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+          <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        </video>
+        <p>2025 Luxury Car Preview</p>
+      </div>
+    </div> -->
+
+<div class="col-sm-3 well">
+  <div class="well">
+    <p><a href="#" style="text-decoration: none;">My Profile</a></p>
+    <video src="https://videocdn.cdnpk.net/videos/6734101e-8023-511d-8457-df1cd275ae14/horizontal/previews/watermarked/large.mp4" class="img-circle" height="65" width="65" autoplay loop muted></video><br>
+    <!-- Changed to robotic boy image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtKe5LBNVlgXTS8xL_3FEdvuAOFWIB6LOBw&s" class="img-circle" height="65" width="65" alt="Robotic Boy Avatar">
+  </div>
+  
+  <!-- Enhanced Interests with detailed functionality -->
+  <div class="well">
+    <p><a href="#" style="text-decoration: none;">Interests</a></p>
+    <div class="interests-container">
+      <span class="label label-default interest-tag" data-interest="news">News</span>
+      <span class="label label-success interest-tag" data-interest="cars">Cars</span>
+      <span class="label label-info interest-tag" data-interest="travel">Travel</span>
+      <span class="label label-warning interest-tag" data-interest="technology">Technology</span>
+      <span class="label label-danger interest-tag" data-interest="exclusive">Exclusive</span>
+    </div>
+  </div>
+  
+  <div class="alert alert-success fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <p><strong>Exclusive Offer!</strong></p>
+    New 2025 models now available for pre-order.
+  </div>
+  
+  <p><a href="#" class="btn btn-info btn-block" id="searchLuxuryBtn">Explore Luxury Garage</a></p>
+  
+  <div class="dropdown">
+    <button class="btn btn-warning btn-block dropdown-toggle" type="button" id="vipDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      VIP Experience
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="vipDropdown">
+      <li><a href="#" data-vip="private">Platinum Tier</a></li>
+      <li><a href="#" data-vip="public">Gold Tier</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" data-vip="compare">Tier Comparison</a></li>
+    </ul>
+  </div>
+  
+  <!-- Updated BMW Car Video -->
+  <div class="thumbnail">
+    <p>BMW M5 Competition</p>
+    <video width="100%" controls poster="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-white-bmw-m5-followed-by-a-blue-audi-s5-41200-large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>BMW Performance Test Drive</p>
+  </div>
+</div>
+
+<!-- Interest Details Modals -->
+<div class="modal fade" id="interestModal" tabindex="-1" role="dialog" aria-labelledby="interestModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="interestModalLabel">Interest Details</h4>
+      </div>
+      <div class="modal-body" id="interestModalBody">
+        <!-- Content loaded dynamically -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    
+    
+    <div class="col-sm-7">
+      <!-- Status Update -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true" id="statusText">Status: Exploring the 2025 luxury car collection at Luxury Elite</p>
+              <button type="button" class="btn btn-default btn-sm" id="likeBtn">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>
+              <span id="likeCount" style="margin-left: 10px;">42</span> likes
+              <button type="button" class="btn btn-default btn-sm pull-right">
+                <span class="glyphicon glyphicon-share"></span> Share
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Car Showcase -->
+      <section id="cars">
+        <div class="highlight-box">
+          <h3>2025 Luxury Car Collection</h3>
+          <p>Discover our exclusive selection of the world's most prestigious automobiles, each offering unparalleled craftsmanship and performance.</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+             <p>ROLLS-ROYCE</p>
+             <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle" height="55" width="55" alt="Rolls Royce">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <h4>Rolls-Royce Phantom</h4>
+              <p>The Phantom is the epitome of automotive luxury, where every detail is handcrafted to perfection. Its presence commands attention, not with noise, but with grace. Riding in one feels less like travel and more like a ceremony. The 2024 model features enhanced sound insulation, a redesigned "Gallery" dashboard for custom artwork, and the latest iteration of Rolls-Royce's 6.75-liter V12 engine producing 563 horsepower.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><i class="fas fa-tachometer-alt"></i> Top Speed: 155 mph</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-rocket"></i> 0-60 mph: 5.1s</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-dollar-sign"></i> Starting at: $460,000</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">View Details</button>
+              <button class="btn btn-default">Test Drive</button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Car Details -->
+<div class="modal fade" id="carDetailsModal" tabindex="-1" role="dialog" aria-labelledby="carDetailsModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="carDetailsModalLabel">Car Details</h4>
+      </div>
+      <div class="modal-body" id="carDetailsContent">
+        <!-- Content will be loaded here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Test Drive -->
+<div class="modal fade" id="testDriveModal" tabindex="-1" role="dialog" aria-labelledby="testDriveModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="testDriveModalLabel">Schedule a Test Drive</h4>
+      </div>
+      <div class="modal-body">
+        <form id="testDriveForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="form-group">
+            <label for="carModel">Car Model</label>
+            <input type="text" class="form-control" id="carModel" readonly>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="submitTestDrive">Submit Request</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+             <p>LAMBORGHINI</p>
+             <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle" height="55" width="55" alt="Lamborghini">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <h4>Lamborghini Revuelto</h4>
+              <p>The Revuelto is Lamborghini's first V12 hybrid supercar, combining raw power with cutting-edge technology. Its 6.5-liter V12 engine works in harmony with three electric motors to produce a combined 1,001 horsepower. The striking design features Lamborghini's signature scissor doors and an aerodynamically optimized body that generates significant downforce. The 2024 model introduces a new infotainment system with 3D graphics and enhanced driver assistance features.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><i class="fas fa-tachometer-alt"></i> Top Speed: 217 mph</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-rocket"></i> 0-60 mph: 2.5s</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-dollar-sign"></i> Starting at: $608,358</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">View Details</button>
+              <button class="btn btn-default">Test Drive</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+             <p>FERRARI</p>
+             <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle" height="55" width="55" alt="Ferrari">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <h4>Ferrari Purosangue</h4>
+              <p>Ferrari's first four-door, four-seater model combines supercar performance with SUV practicality. Powered by a 6.5-liter V12 engine producing 715 horsepower, the Purosangue features rear-hinged back doors and an innovative active suspension system. The 2024 model offers enhanced all-wheel-drive capabilities while maintaining Ferrari's signature driving dynamics. The interior features premium materials with extensive customization options.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><i class="fas fa-tachometer-alt"></i> Top Speed: 193 mph</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-rocket"></i> 0-60 mph: 3.2s</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-dollar-sign"></i> Starting at: $398,350</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">View Details</button>
+              <button class="btn btn-default">Test Drive</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+             <p>BENTLEY</p>
+             <img src="bentley.jpg" class="img-circle" height="55" width="55" alt="Bentley">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <h4>Bentley Continental GT Speed</h4>
+              <p>The Continental GT Speed represents the pinnacle of Bentley's grand touring capabilities. Its 6.0-liter W12 twin-turbocharged engine delivers 650 horsepower and 664 lb-ft of torque, propelling the car from 0-60 mph in just 3.5 seconds. The 2024 model features enhanced aerodynamics, a redesigned grille, and the latest iteration of Bentley's rotating display that can switch between touchscreen, analog dials, or a clean veneer panel.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><i class="fas fa-tachometer-alt"></i> Top Speed: 208 mph</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-rocket"></i> 0-60 mph: 3.5s</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-dollar-sign"></i> Starting at: $245,000</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">View Details</button>
+              <button class="btn btn-default">Test Drive</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+             <p>ASTON MARTIN</p>
+             <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle" height="55" width="55" alt="Aston Martin">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <h4>Aston Martin DB12</h4>
+              <p>The DB12 is Aston Martin's latest grand tourer, combining breathtaking design with formidable performance. Its 4.0-liter twin-turbo V8 produces 671 horsepower, making it the most powerful DB model yet. The 2024 version features a completely redesigned interior with a new infotainment system developed in-house, along with enhanced aerodynamics and a retuned suspension for improved handling without sacrificing comfort.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><i class="fas fa-tachometer-alt"></i> Top Speed: 202 mph</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-rocket"></i> 0-60 mph: 3.5s</p>
+                </div>
+                <div class="col-sm-4">
+                  <p><i class="fas fa-dollar-sign"></i> Starting at: $248,086</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">View Details</button>
+              <button class="btn btn-default">Test Drive</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Gallery Section -->
+      <section id="gallery" style="margin-top: 30px;">
+        <h2>Luxury Gallery</h2>
+        <p>Explore our collection of the world's most exclusive automobiles</p>
+        <div class="row gallery">
+          <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Car 1">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Car 2">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Car 3">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Car 4">
+          </div>
+          <div class="col-sm-4">
+            <img src="car.jpg" alt="Luxury Car 5">
+          </div>
+          <div class="col-sm-4">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Car 6">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Testimonials Section -->
+      <section id="testimonials" style="margin-top: 30px;">
+        <h2>Client Testimonials</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle pull-left" height="60" width="60" alt="Client 1">
+                <p>"Luxury Elite made my dream of owning a Rolls-Royce a reality. Their attention to detail and customer service is unmatched in the industry."</p>
+                <p><strong>- Sarah Johnson, CEO</strong></p>
+                <div class="stars">
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="img-circle pull-left" height="60" width="60" alt="Client 2">
+                <p>"The team at Luxury Elite understood exactly what I was looking for in a luxury vehicle. Their knowledge and professionalism are exceptional."</p>
+                <p><strong>- Michael Chen, Entrepreneur</strong></p>
+                <div class="stars">
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star" style="color: #d4af37;"></i>
+                  <i class="fas fa-star-half-alt" style="color: #d4af37;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Right Sidebar -->
+    <div class="col-sm-2 well">
+      <div class="thumbnail" id="events">
+        <p>Upcoming Events:</p>
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Auto Show" width="100%">
+        <p><strong>Monaco Luxury Auto Show</strong></p>
+        <p><i class="far fa-calendar-alt"></i> 15-18 May 2024</p>
+        <p><i class="fas fa-map-marker-alt"></i> Monte Carlo, Monaco</p>
+        <button class="btn btn-primary btn-block">RSVP Now</button>
+      </div>
+      
+      <div class="well">
+        <p>Special Offers</p>
+        <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Special Offer" class="img-responsive">
+        <p>Limited edition models available with exclusive financing options</p>
+        <button class="btn btn-success btn-block">View Offers</button>
+      </div>
+      
+      <div class="well">
+        <p>Video Showcase</p>
+        <video width="100%" controls>
+          <source src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4" type="video/mp4">
+        </video>
+        <p>Take a virtual tour of our showroom</p>
+      </div>
+      
+      <div class="well">
+        <p>Newsletter</p>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+        </form>
+        <p style="font-size: 12px; margin-top: 10px;">Get exclusive updates on new arrivals and VIP events</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+   <!-- WhatsApp Float Button -->
+   <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<!-- Discover Section -->
+<section id="discover" style="margin-top: 30px; background-color: #f8f9fa; padding: 30px 0;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <h2 style="font-family: 'Playfair Display', serif; color: #333; margin-bottom: 30px;">Discover Luxury Elite</h2>
+      </div>
+    </div>
+    
+    <div class="row text-center">
+      <!-- Option 1 -->
+      <div class="col-sm-4">
+        <div class="discover-option" style="padding: 20px; border-radius: 5px; transition: all 0.3s;">
+          <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); height: 100%;">
+            <i class="fas fa-calendar-alt" style="font-size: 40px; color: #d4af37; margin-bottom: 15px;"></i>
+            <h4 style="color: #333;">Exclusive Events</h4>
+            <p style="color: #666;">Experience our VIP-only events showcasing the latest luxury vehicles and lifestyle products.</p>
+            <a href="#events" class="btn btn-outline-dark" style="margin-top: 10px;">Learn More</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Option 2 -->
+      <div class="col-sm-4">
+        <div class="discover-option" style="padding: 20px; border-radius: 5px; transition: all 0.3s;">
+          <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); height: 100%;">
+            <i class="fas fa-tags" style="font-size: 40px; color: #d4af37; margin-bottom: 15px;"></i>
+            <h4 style="color: #333;">Seasonal Savings</h4>
+            <p style="color: #666;">Take advantage of our limited-time offers and seasonal promotions on select luxury models.</p>
+            <a href="#" class="btn btn-outline-dark" style="margin-top: 10px;">View Offers</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Option 3 -->
+      <div class="col-sm-4">
+        <div class="discover-option" style="padding: 20px; border-radius: 5px; transition: all 0.3s;">
+          <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); height: 100%;">
+            <i class="fas fa-credit-card" style="font-size: 40px; color: #d4af37; margin-bottom: 15px;"></i>
+            <h4 style="color: #333;">Elite Rewards</h4>
+            <p style="color: #666;">Join our premium membership program for exclusive benefits and rewards on every purchase.</p>
+            <a href="#" class="btn btn-outline-dark" style="margin-top: 10px;">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Discover Luxury Section -->
+<section class="discover-section" style="background-color: #f8f9fa; padding: 40px 0; margin-top: 30px;">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: 30px; font-weight: 700; color: #2c3e50; text-transform: uppercase; letter-spacing: 2px;">DISCOVER LUXURY CAR </h2>
+    <div class="row">
+      <!-- Card 1: Explore Collection -->
+      <div class="col-md-4 col-sm-6">
+        <div class="discover-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; margin-bottom: 20px; height: 100%;">
+          <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Cars" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="discover-content" style="padding: 20px;">
+            <h3 style="color: #d4af37; margin-top: 0;">Explore Our Collection</h3>
+            <p style="color: #7f8c8d;">Discover the world's most exclusive automobiles from top luxury brands.</p>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-toggle="modal" data-target="#collectionModal">View Collection</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2: Elite Maintenance -->
+      <div class="col-md-4 col-sm-6">
+        <div class="discover-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; margin-bottom: 20px; height: 100%;">
+          <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Service" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="discover-content" style="padding: 20px;">
+            <h3 style="color: #d4af37; margin-top: 0;">Elite Maintenance</h3>
+            <p style="color: #7f8c8d;">Schedule premium maintenance for your luxury vehicle with our certified technicians.</p>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-toggle="modal" data-target="#serviceModal">Book Service</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3: Exclusive Offers -->
+      <div class="col-md-4 col-sm-6">
+        <div class="discover-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; margin-bottom: 20px; height: 100%;">
+          <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Special Offers" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="discover-content" style="padding: 20px;">
+            <h3 style="color: #d4af37; margin-top: 0;">Exclusive Offers</h3>
+            <p style="color: #7f8c8d;">Limited-time financing options and special deals on select luxury models.</p>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-toggle="modal" data-target="#offersModal">View Offers</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 4: VIP Events -->
+      <div class="col-md-4 col-sm-6">
+        <div class="discover-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; margin-bottom: 20px; height: 100%;">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="VIP Events" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="discover-content" style="padding: 20px;">
+            <h3 style="color: #d4af37; margin-top: 0;">VIP Events</h3>
+            <p style="color: #7f8c8d;">Exclusive access to luxury auto shows and private viewing events.</p>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-toggle="modal" data-target="#eventsModal">View Events</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 5: Test Drive -->
+      <div class="col-md-4 col-sm-6">
+        <div class="discover-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; margin-bottom: 20px; height: 100%;">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Test Drive" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="discover-content" style="padding: 20px;">
+            <h3 style="color: #d4af37; margin-top: 0;">Premium Test Drives</h3>
+            <p style="color: #7f8c8d;">Experience the thrill of driving these luxury vehicles with our concierge service.</p>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-toggle="modal" data-target="#testDriveModal">Schedule Drive</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collection Modal -->
+<div class="modal fade" id="collectionModal" tabindex="-1" role="dialog" aria-labelledby="collectionModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="collectionModalLabel">Our Luxury Collection</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-responsive" style="border-radius: 4px; margin-bottom: 15px;">
+          </div>
+          <div class="col-md-6">
+            <h3 style="color: #d4af37;">World-Class Luxury Vehicles</h3>
+            <p>Explore our curated selection of the finest automobiles from:</p>
+            <ul>
+              <li>Rolls-Royce</li>
+              <li>Lamborghini</li>
+              <li>Ferrari</li>
+              <li>Bentley</li>
+              <li>Aston Martin</li>
+              <li>Mercedes-Maybach</li>
+            </ul>
+            <p>Each vehicle undergoes rigorous inspection and comes with our Elite Certification.</p>
+            <a href="#cars" class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;" data-dismiss="modal">Browse Inventory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Service Modal -->
+<div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="serviceModalLabel">Elite Maintenance Services</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-responsive" style="border-radius: 4px; margin-bottom: 15px;">
+          </div>
+          <div class="col-md-6">
+            <h3 style="color: #d4af37;">Premium Care for Your Luxury Vehicle</h3>
+            <p>Our certified technicians provide:</p>
+            <ul>
+              <li>Factory-trained expertise</li>
+              <li>Genuine OEM parts</li>
+              <li>Concierge pickup/delivery</li>
+              <li>Loaner vehicle program</li>
+              <li>Detail service included</li>
+            </ul>
+            <form>
+              <div class="form-group">
+                <label>Select Service Type</label>
+                <select class="form-control">
+                  <option>Annual Maintenance</option>
+                  <option>Oil Change Service</option>
+                  <option>Tire Rotation</option>
+                  <option>Brake Inspection</option>
+                  <option>Full Diagnostic</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;">Schedule Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Offers Modal -->
+<div class="modal fade" id="offersModal" tabindex="-1" role="dialog" aria-labelledby="offersModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="offersModalLabel">Current Exclusive Offers</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-responsive" style="border-radius: 4px; margin-bottom: 15px;">
+          </div>
+          <div class="col-md-6">
+            <h3 style="color: #d4af37;">Special Financing & Leasing</h3>
+            <div class="alert alert-success">
+              <h4>0.9% APR Financing</h4>
+              <p>On select 2025 models for qualified buyers</p>
+            </div>
+            <div class="alert alert-info">
+              <h4>Lease Specials</h4>
+              <p>$1,299/month for 36 months with $5,999 due at signing</p>
+            </div>
+            <div class="alert alert-warning">
+              <h4>Trade-In Bonus</h4>
+              <p>Get $5,000 additional trade-in credit on select models</p>
+            </div>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <!-- Accessibility Tools Widget -->
+<div id="accessibility-widget">
+  <button id="accessibility-toggle" aria-label="Accessibility Tools">
+    <i class="fas fa-universal-access"></i>
+  </button>
+  <div id="accessibility-menu">
+    <strong>Accessibility Tools</strong>
+    <ul>
+      <li onclick="changeFontSize(1)">🔍 Increase Text</li>
+      <li onclick="changeFontSize(-1)">🔎 Decrease Text</li>
+      <li onclick="toggleClass('grayscale')">📚 Grayscale</li>
+      <li onclick="toggleClass('high-contrast')">⚫ High Contrast</li>
+      <li onclick="toggleClass('negative-contrast')">👁 Negative Contrast</li>
+      <li onclick="setLightBackground()">🌞 Light Background</li>
+      <li onclick="underlineLinks()">🔗 Links Underline</li>
+      <li onclick="setReadableFont()">🔤 Readable Font</li>
+      <li onclick="resetAccessibility()">↩ Reset</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+<!-- Events Modal -->
+<div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="eventsModalLabel">Upcoming VIP Events</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-responsive" style="border-radius: 4px; margin-bottom: 15px;">
+          </div>
+          <div class="col-md-6">
+            <h3 style="color: #d4af37;">Exclusive Experiences</h3>
+            <div class="media">
+              <div class="media-left">
+                <i class="fas fa-calendar-alt fa-2x" style="color: #d4af37;"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Monaco Luxury Auto Show</h4>
+                <p>May 15-18, 2026 | Monte Carlo, Monaco</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <i class="fas fa-calendar-alt fa-2x" style="color: #d4af37;"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Private Collection Viewing</h4>
+                <p>June 5, 2024 | Our Dubai Showroom</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <i class="fas fa-calendar-alt fa-2x" style="color: #d4af37;"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">2025 Model Launch</h4>
+                <p>July 22, 2024 | Luxury Elite Headquarters</p>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border: none;">RSVP Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Enhanced Footer -->
+<footer class="container-fluid text-center" id="contact">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Monaco</p>
+      <p><i class="fas fa-phone"></i> +92 0303-2119816</p>
+      <p><i class="fas fa-envelope"></i> contact@luxuryelite.com</p>
+      <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Quick Links</h3>
+      <div class="footer-links">
+        <a href="#">Home</a><br>
+        <a href="#gallery">Gallery</a><br>
+        <a href="#cars">Cars</a><br>
+        <a href="#events">Events</a><br>
+        <a href="#testimonials">Testimonials</a><br>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+      <div style="margin-top: 20px;">
+        <img src="logo.png" alt="Logo" style="max-width: 150px; filter: brightness(0) invert(1);">
+      </div>
+    </div>
+  </div>
+  <hr style="border-color: #555; margin: 20px 0;">
+  <p>&copy; 2025 Luxury Elite. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Luxury Enthusiasts Elite.</p>
+  <P>&copy; Created by ABDUL-REHMAN</P>
+</footer>
+<script src="project(1).js"></script>
+</body>
+</html>
